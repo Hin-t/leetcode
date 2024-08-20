@@ -1,0 +1,14 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/suhaonan/CandC++/leetcode/设计链表/设计链表"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003AD0, symSize: 0x88 }
+  - { offsetInCU: 0x2DDE, offset: 0x2DDE, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x0, symBinAddr: 0x100003AD0, symSize: 0x88 }
+  - { offsetInCU: 0x2F0F, offset: 0x2F0F, size: 0x8, addend: 0x0, symName: __ZN12MyLinkedListC1Ev, symObjAddr: 0x88, symBinAddr: 0x100003B58, symSize: 0x2C }
+  - { offsetInCU: 0x2F37, offset: 0x2F37, size: 0x8, addend: 0x0, symName: __ZN12MyLinkedList9addAtHeadEi, symObjAddr: 0xB4, symBinAddr: 0x100003B84, symSize: 0xB8 }
+  - { offsetInCU: 0x2F85, offset: 0x2F85, size: 0x8, addend: 0x0, symName: __ZN12MyLinkedList9addAtTailEi, symObjAddr: 0x16C, symBinAddr: 0x100003C3C, symSize: 0xD4 }
+  - { offsetInCU: 0x2FD3, offset: 0x2FD3, size: 0x8, addend: 0x0, symName: __ZN12MyLinkedList10addAtIndexEii, symObjAddr: 0x240, symBinAddr: 0x100003D10, symSize: 0x148 }
+  - { offsetInCU: 0x3043, offset: 0x3043, size: 0x8, addend: 0x0, symName: __ZN12MyLinkedListC2Ev, symObjAddr: 0x388, symBinAddr: 0x100003E58, symSize: 0x1C }
+  - { offsetInCU: 0x3087, offset: 0x3087, size: 0x8, addend: 0x0, symName: __ZN12MyLinkedList8ListNodeC1Ei, symObjAddr: 0x3A4, symBinAddr: 0x100003E74, symSize: 0x34 }
+  - { offsetInCU: 0x30BD, offset: 0x30BD, size: 0x8, addend: 0x0, symName: __ZN12MyLinkedList8ListNodeC2Ei, symObjAddr: 0x3D8, symBinAddr: 0x100003EA8, symSize: 0x24 }
+...
