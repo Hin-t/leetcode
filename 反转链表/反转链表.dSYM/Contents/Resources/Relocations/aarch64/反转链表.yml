@@ -1,0 +1,13 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     "/Users/suhaonan/CandC++/leetcode/反转链表/反转链表"
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: __Z10headInsertP8ListNodei, symObjAddr: 0x0, symBinAddr: 0x100003B78, symSize: 0xC8 }
+  - { offsetInCU: 0x2DDE, offset: 0x2DDE, size: 0x8, addend: 0x0, symName: __Z10headInsertP8ListNodei, symObjAddr: 0x0, symBinAddr: 0x100003B78, symSize: 0xC8 }
+  - { offsetInCU: 0x2E96, offset: 0x2E96, size: 0x8, addend: 0x0, symName: __ZN8ListNodeC1EiPS_, symObjAddr: 0xC8, symBinAddr: 0x100003C40, symSize: 0x3C }
+  - { offsetInCU: 0x2EDA, offset: 0x2EDA, size: 0x8, addend: 0x0, symName: __ZN8ListNodeC1Ei, symObjAddr: 0x104, symBinAddr: 0x100003C7C, symSize: 0x34 }
+  - { offsetInCU: 0x2F10, offset: 0x2F10, size: 0x8, addend: 0x0, symName: __Z11reverseListP8ListNode, symObjAddr: 0x138, symBinAddr: 0x100003CB0, symSize: 0xF0 }
+  - { offsetInCU: 0x2F66, offset: 0x2F66, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x228, symBinAddr: 0x100003DA0, symSize: 0x110 }
+  - { offsetInCU: 0x2FE0, offset: 0x2FE0, size: 0x8, addend: 0x0, symName: __ZN8ListNodeC2EiPS_, symObjAddr: 0x338, symBinAddr: 0x100003EB0, symSize: 0x2C }
+  - { offsetInCU: 0x3024, offset: 0x3024, size: 0x8, addend: 0x0, symName: __ZN8ListNodeC2Ei, symObjAddr: 0x364, symBinAddr: 0x100003EDC, symSize: 0x24 }
+...

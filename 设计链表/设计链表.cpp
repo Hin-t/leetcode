@@ -100,7 +100,7 @@ public:
                 count++;
                 rear = rear->next;
             }
-            if (count == index - 1 && rear!=nullptr)
+            if (count == index - 1 && rear != nullptr)
             {
                 newNode->next = rear->next;
                 rear->next = newNode;
@@ -139,6 +139,47 @@ public:
             myList = myList->next;
         }
     }
+
+    ListNode *detectCycle(ListNode *head)
+    {
+        ListNode *pre = head;
+        ListNode *curr = head;
+        ListNode *move = head;
+        if (head == nullptr || head->next == nullptr)
+        {
+            return nullptr;
+        }
+        else
+        {
+            while (curr != nullptr && curr->next != nullptr)
+            {
+                pre = pre->next;
+                curr = curr->next->next;
+                if (pre == curr)
+                {
+                    break;
+                }
+                if (curr != nullptr && curr->next != nullptr)
+                {
+                    return nullptr;
+                }
+            }
+            while (move != curr)
+            {
+                curr = curr->next;
+                while (curr != pre)
+                {
+                    if (curr == move)
+                    {
+                        return move;
+                    }
+                    curr = curr->next;
+                }
+                move = move->next;
+            }
+            return nullptr;
+        }
+    }
 };
 
 int main()
@@ -147,8 +188,12 @@ int main()
 
     obj->addAtHead(1);
     obj->addAtTail(3);
-    obj->addAtIndex(3,2);
-
+    obj->addAtIndex(3, 2);
+    
+    obj->addAtTail(3);
+    obj->addAtTail(2);
+    obj->addAtTail(0);
+    obj->addAtTail(-4);
 }
 /*
  * Your MyLinkedList object will be instantiated and called as such:
