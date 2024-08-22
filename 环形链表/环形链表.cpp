@@ -17,6 +17,64 @@ struct ListNode
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
+/*
+    暴力破解，傻瓜方法
+ */
+// ListNode *detectCycle(ListNode *head)
+// {
+//     ListNode *pre = head;
+//     ListNode *curr = head;
+//     ListNode *move = head;
+//     if (head == nullptr || head->next == nullptr)
+//     {
+//         return nullptr;
+//     }
+//     else
+//     {
+//         while (curr != nullptr && curr->next != nullptr)
+//         {
+//             pre = pre->next;
+//             curr = curr->next->next;
+//             if (pre == curr)
+//             {
+//                 if (move == curr)
+//                 {
+//                     return move;
+//                 }
+//                 else
+//                 {
+//                     while (move != curr)
+//                     {
+//                         curr = curr->next;
+//                         while (curr != pre)
+//                         {
+//                             if (curr == move)
+//                             {
+//                                 return move;
+//                             }
+//                             curr = curr->next;
+//                         }
+//                         move = move->next;
+//                     }
+//                 }
+//             }
+//             if (curr == nullptr || curr->next == nullptr)
+//             {
+//                 return nullptr;
+//             }
+//         }
+//         return nullptr;
+//     }
+// }
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
 
 ListNode *detectCycle(ListNode *head)
 {
@@ -43,16 +101,12 @@ ListNode *detectCycle(ListNode *head)
                 {
                     while (move != curr)
                     {
-                        curr = curr->next;
-                        while (curr != pre)
-                        {
-                            if (curr == move)
-                            {
-                                return move;
-                            }
-                            curr = curr->next;
-                        }
                         move = move->next;
+                        curr = curr->next;
+                        if (move == curr)
+                        {
+                            return move;
+                        }
                     }
                 }
             }
@@ -65,7 +119,6 @@ ListNode *detectCycle(ListNode *head)
         return nullptr;
     }
 }
-
 int main()
 {
 
